@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+</head>
+
+<body>
+  <center>YAML Parser</center>
+  <hr>
+  <div>
+    <center>
+     <button>Convert to JSON</button>
+      </center>
+  </div>
+  <script src="script.js"></script>
+  <div>
+    <div style="float:left; margin-left: 10%;"> 
+      Input
+       <pre><code class="language-html" style="min-height: 500px;">
+         - just: write some
+         - yaml: 
+           - [here, and]
+           - {it: updates, in: real-time}
+
+       </code></pre>
+    </div>
+    <div style="float:right; margin-right: 10%">
+      Output
+      <pre><code class="language-html" style="min-height: 500px;">
+        Output
+        [
+          {
+            "just": "write some"
+          }, 
+          {
+            "yaml": [
+              [
+                "here", 
+                "and"
+              ], 
+              {
+                "it": "updates", 
+                "in": "real-time"
+              }
+            ]
+          }
+        ]
+      </code></pre>
+      </div>
+
+  </div>
+  
+
+</body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</html>
